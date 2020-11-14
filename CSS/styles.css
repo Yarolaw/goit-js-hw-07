@@ -1,0 +1,29 @@
+.flex-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  list-style: none;
+  padding: 0;
+}
+.flex-item {
+  margin: 10px;
+  width: 470px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
