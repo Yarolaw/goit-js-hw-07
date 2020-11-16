@@ -1,23 +1,18 @@
-const potatoItem = document.createElement("li")
-potatoItem.textContent = "Картошка"
 
-const mushItem = document.createElement("li")
-mushItem.textContent = "Грибы"
+const ingredients = [
+  'Картошка',
+  'Грибы',
+  'Чеснок',
+  'Помидоры',
+  'Зелень',
+  'Приправы',
+];
+const ulRef = document.querySelector("#ingredients");
 
-const garlicItem = document.createElement("li")
-garlicItem.textContent = "Чеснок"
-
-const tomatoItem = document.createElement("li")
-tomatoItem.textContent = "Помидоры"
-
-const greensItem = document.createElement("li")
-greensItem.textContent = "Зелень"
-
-const condimentsItem = document.createElement("li")
-condimentsItem.textContent = "Приправы"
-
-const ingredientsList = document.querySelector("#ingredients")
-
-ingredientsList.append(potatoItem, mushItem, garlicItem, tomatoItem, greensItem, condimentsItem)
-
-console.log(ingredientsList);
+const createListFood = ingredient => {
+    const newLiRef = document.createElement("li");
+    newLiRef.textContent = ingredient;
+    return newLiRef
+}
+const listProdRef = ingredients.map(ingredient => createListFood(ingredient))
+ulRef.append(...listProdRef)

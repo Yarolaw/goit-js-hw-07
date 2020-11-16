@@ -1,8 +1,7 @@
-.flex-conteiner {
+#gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
 
   list-style: none;
   padding: 0;
@@ -13,7 +12,6 @@
 }
 img {
   max-width: 100%;
-  height: auto;
 }
 
 #validation-input {

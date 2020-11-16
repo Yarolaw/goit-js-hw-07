@@ -3,9 +3,10 @@ const nameRef = document.querySelector("#name-output")
 
 inputRef.addEventListener("input", event => {
 
-    if (inputRef !== "") {
-        nameRef.textContent = event.target.value;
-   }
+    if (event.target.value !== "") {
+      nameRef.textContent = event.target.value;
+    }
+  else {nameRef.textContent='Незнакомец'}
  })
 
 
